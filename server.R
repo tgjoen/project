@@ -9,8 +9,7 @@ shinyServer(function(input, output) {
                  Control<-  rnorm(input$c_n, input$c_mean,input$c_sd)
                  Test<-rnorm(input$c_n, input$t_mean,input$t_sd)
                  df<-data.frame(Control,Test)
-                #df<-data.frame(rnorm(input$c_n, input$c_mean,input$c_sd),
-                                 # rnorm(input$c_n, input$t_mean,input$t_sd))
+                
                 df.m<-melt(df)   
                 })
                 
